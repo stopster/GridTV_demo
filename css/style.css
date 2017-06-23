@@ -25,8 +25,9 @@ body{
 }
 
 .container{
-    max-height: 960px;
-    max-width: 1920px;
+    max-width: 1900px;
+    min-width: 540px;
+    height: 960px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -164,4 +165,10 @@ body{
     background-color: white;
     overflow: hidden;
     overflow-y: scroll;
+}
+
+@media(max-width: 1600px){
+    .container{
+        max-height: 720px;
+    }
 }
