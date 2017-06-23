@@ -1,0 +1,167 @@
+
+h3{
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    text-transform: uppercase;
+    background-color: #141925;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #141925;
+    font-family: 'Rokkitt', serif;
+    font-size: 16px;
+}
+
+.col-xs-12{
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.col-xs-6{
+    width: 50%;
+    flex-basis: 100%;
+}
+
+.container{
+    max-height: 1080px;
+    max-width: 2160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 3;
+}
+
+.video-container{
+    flex: 10;
+    background-color: black;
+}
+
+.video-container iframe{
+    width: 100%;
+    height: 100%;
+}
+.news-feed-container{
+    flex: 6;
+    overflow-y: scroll;
+    font-size: 1.3rem;
+}
+.news-feed-container p{
+    border-bottom: 1px solid #141925;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.news-feed-container p:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    /*top: 50%;*/
+    margin-top: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: #D2300C;
+}
+
+.news-feed-container p{
+    margin-left: 10px;
+}
+
+.logo-container{
+    flex: 2;
+    background-color: #141925;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-wrap{
+    box-sizing: border-box;
+    flex: 1;
+    align-self: stretch;
+    margin: 10px 20px;
+    height: 100px;
+}
+
+.logo-wrap img{
+    height: 100%;
+}
+
+.right-to-logo-wrap{
+    display: flex;
+    flex: 7;
+    flex-direction: column;
+    background-color: white;
+}
+
+.date,
+.local-weather{
+    flex: 1;
+    padding: 10px 20px;
+    color: #D2300C;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.date .time{
+    color: #333;
+}
+
+.local-weather{
+    background-color: #D2300C;
+    color: white;
+    display: flex;
+}
+
+.local-weather span{
+    flex: 1;
+    margin: auto 0;
+    border-right: 1px solid white;
+    text-align: center;
+}
+
+.local-weather span:last-child{
+    border-right: none;
+}
+.weather-widget{
+    flex: 2;
+    display: flex;
+    background-color: #19869F;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.weather-widget .day-forecast{
+    flex: 1;
+    color: white;
+    border-left: 1px solid white;
+    text-align: center;
+    font-size: 2rem;
+}
+.weather-widget .day-forecast:first-child{
+    border-left: none;
+}
+
+.tweets-widget{
+    flex: 6;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
